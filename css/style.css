@@ -146,9 +146,6 @@ a:visited {
 	background-color: transparent;
 	color:#FFD700;
 	text-align: center;
-	position: fixed;
-	left: 0;
-	bottom: 0;
 }
 
 .footer span {
@@ -187,5 +184,13 @@ a:visited {
 		display:flex;
 		align-items: center;
 		justify-content: center;
+	}
+}
+
+@media (min-height: 1000px) {
+	.footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
 	}
 }
