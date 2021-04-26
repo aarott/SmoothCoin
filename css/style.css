@@ -97,7 +97,8 @@ a:visited {
 
 .info-grid-item {
 	display: block;
-	border-style: solid;
+	border: 1px solid;
+	box-shadow: 5px 10px 18px #FFD700;
 	padding: 15px;
 	font-size: 20px;
 	font-weight: 900;
