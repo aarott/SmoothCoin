@@ -157,6 +157,55 @@ a:visited {
 	padding-top: 20px;
 }
 
+.grid-image {
+	max-width: 100%;
+	height: auto;
+}
+
+.grid-con > div {
+	text-align: center;
+	padding: 20px 20px 20px 20px;
+	border-style: none;
+}
+
+.item1 { 
+	grid-area: header;
+}
+.item2 { 
+	grid-area: step1;
+}
+.item3 { 
+	grid-area: image1; 
+}
+.item4 { 
+	grid-area: step2; 
+}
+.item5 { 
+	grid-area: image2; 
+}
+.item6 { 
+	grid-area: step3; 
+}
+.item7 { 
+	grid-area: image3; 
+}
+
+.grid-con {
+  display: grid;
+  grid-template-areas:
+	'header header header header header header'
+	'step1 step1 step1 image1 image1 image1'
+	'step1 step1 step1 image1 image1 image1'
+	'step2 step2 step2 image2 image2 image2'
+	'step2 step2 step2 image2 image2 image2'
+	'step3 step3 step3 image3 image3 image3'
+	'step3 step3 step3 image3 image3 image3';
+  grid-gap: 10px;
+  padding: 10px;
+  line-height: 1.8;
+  color: white;
+}
+
 
 @media screen and (max-width: 600px) {
 	.topnav a:not(:first-child) {display: none;}
